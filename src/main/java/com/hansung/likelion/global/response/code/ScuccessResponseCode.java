@@ -3,6 +3,7 @@ package com.hansung.likelion.global.response.code;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import static com.hansung.likelion.global.constant.StaticValue.CREATED;
 import static com.hansung.likelion.global.constant.StaticValue.OK;
 
 /**
