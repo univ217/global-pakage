@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**") // 모든 경로에 대해 CORS 정책 허용
 //                .allowedOrigins() // 특정 도메인 http://localhost:3000, https://likelion.com
-                .allowedOriginPatterns() // 여러 패턴이 필요할 때
+                .allowedOriginPatterns("*") // 여러 패턴이 필요할 때
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowCredentials(true);
     }
